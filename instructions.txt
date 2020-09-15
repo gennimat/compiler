@@ -1,0 +1,8 @@
+Compile and run instructions:
+
+1. gcc -o hashtbl.o -Wall -g -c hashtbl.c
+2. flex pasc600.l
+3. bison -v -d pasc600.y
+4. gcc lex.yy.c pasc600.tab.c hashtbl.o -o a.out -lfl
+5. /a.out < pasc600test1.p > results1.txt
+6. /a.out < pasc600test2.p > results2.txt
